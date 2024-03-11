@@ -12,7 +12,6 @@ To write a python program for creating Chat using TCP Sockets Links.
 ```
 import socket
 import threading
-
 def handle_client(client_socket):
     while True:
         try:
@@ -26,7 +25,6 @@ def handle_client(client_socket):
             client_socket.sendall(message.encode())
         except:
             break
-
     client_socket.close()
 
 def start_server():
